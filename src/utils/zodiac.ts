@@ -54,7 +54,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Sun',
     traits: ['Confident', 'Generous', 'Creative', 'Dramatic'],
     compatibleSigns: ['Aries', 'Gemini', 'Libra', 'Sagittarius'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/leo_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623469/leo_picture_xzgdj1.webp'
   },
   {
     name: 'Virgo',
