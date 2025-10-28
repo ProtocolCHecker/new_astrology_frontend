@@ -10,7 +10,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Mars',
     traits: ['Bold', 'Energetic', 'Pioneering', 'Competitive'],
     compatibleSigns: ['Gemini', 'Leo', 'Sagittarius', 'Aquarius'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/aries_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623399/aries_picture_e3utfb.webp'
   },
   {
     name: 'Taurus',
