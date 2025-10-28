@@ -12,7 +12,7 @@ const VideoBackground: React.FC = () => {
         style={{ filter: 'brightness(0.4) contrast(1.2)' }}
       >
         <source
-          src="https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/back_hole_video.mp4"
+          src="https://res.cloudinary.com/dmzc2hu4h/video/upload/v1761625656/back_hole_video_mmizi9.mp4"
           type="video/mp4"
         />
       </video>
