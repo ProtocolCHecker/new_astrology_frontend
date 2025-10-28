@@ -140,7 +140,7 @@ const ZodiacWheel: React.FC<ZodiacWheelProps> = ({
           transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
         >
           <img
-            src="https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/sun_picture.webp"
+            src="https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623457/sun_picture_itahsw.png"
             alt="Sun"
             className="w-full h-full object-cover"
             onError={(e) => {
