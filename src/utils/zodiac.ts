@@ -120,7 +120,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Uranus',
     traits: ['Independent', 'Innovative', 'Humanitarian', 'Eccentric'],
     compatibleSigns: ['Aries', 'Gemini', 'Libra', 'Sagittarius'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/aquarius_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623458/aquarius_picture_mv7sx6.webp'
   },
   {
     name: 'Pisces',
