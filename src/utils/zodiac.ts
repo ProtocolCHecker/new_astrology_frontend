@@ -109,7 +109,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Saturn',
     traits: ['Ambitious', 'Disciplined', 'Responsible', 'Traditional'],
     compatibleSigns: ['Taurus', 'Virgo', 'Scorpio', 'Pisces'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/capricorn_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623469/capricorn_picture_ln33ro.webp'
   },
   {
     name: 'Aquarius',
