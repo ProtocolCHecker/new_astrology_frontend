@@ -87,7 +87,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Pluto',
     traits: ['Intense', 'Passionate', 'Mysterious', 'Transformative'],
     compatibleSigns: ['Cancer', 'Virgo', 'Capricorn', 'Pisces'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/scorpio_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623457/scorpio_picture_ab86nz.webp'
   },
   {
     name: 'Sagittarius',
@@ -98,7 +98,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Jupiter',
     traits: ['Adventurous', 'Optimistic', 'Philosophical', 'Free-spirited'],
     compatibleSigns: ['Aries', 'Leo', 'Libra', 'Aquarius'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/sagittarius_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623469/sagittarius_picture_omnsaa.webp'
   },
   {
     name: 'Capricorn',
