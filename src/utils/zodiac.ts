@@ -32,7 +32,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Mercury',
     traits: ['Adaptable', 'Curious', 'Witty', 'Communicative'],
     compatibleSigns: ['Aries', 'Leo', 'Libra', 'Aquarius'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/gemini_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623457/gemini_picture_unyydz.webp'
   },
   {
     name: 'Cancer',
