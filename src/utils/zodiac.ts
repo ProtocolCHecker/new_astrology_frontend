@@ -21,7 +21,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Venus',
     traits: ['Reliable', 'Patient', 'Practical', 'Devoted'],
     compatibleSigns: ['Cancer', 'Virgo', 'Capricorn', 'Pisces'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/taurus_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623469/taurus_picture_jv7wdk.webp'
   },
   {
     name: 'Gemini',
