@@ -76,7 +76,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Venus',
     traits: ['Harmonious', 'Diplomatic', 'Fair', 'Social'],
     compatibleSigns: ['Gemini', 'Leo', 'Sagittarius', 'Aquarius'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/libra_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623457/libra_picture_fy8fr6.webp'
   },
   {
     name: 'Scorpio',
