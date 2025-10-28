@@ -65,7 +65,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Mercury',
     traits: ['Analytical', 'Practical', 'Helpful', 'Perfectionist'],
     compatibleSigns: ['Taurus', 'Cancer', 'Scorpio', 'Capricorn'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/virgo_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623469/virgo_picture_ybel0n.webp'
   },
   {
     name: 'Libra',
