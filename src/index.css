@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mystical Typography Classes */
+@layer components {
+  /* Primary Headings - Cinzel with Golden Glow */
+  .heading-primary {
+    @apply font-cinzel font-semibold tracking-mystical text-shadow-gold-glow;
+  }
+  
+  .heading-zodiac {
+    @apply font-cinzel font-bold tracking-cosmic text-shadow-gold-glow;
+  }
+  
+  .heading-cosmic {
+    @apply font-cinzel font-medium tracking-mystical text-shadow-cosmic-glow;
+  }
+  
+  /* Body Text - Crimson Text */
+  .text-mystical {
+    @apply font-crimson leading-relaxed tracking-wide;
+  }
+  
+  .text-reading {
+    @apply font-crimson text-lg leading-loose tracking-wide;
+  }
+  
+  .text-horoscope {
+    @apply font-crimson leading-relaxed tracking-wide;
+  }
+  
+  /* Navigation and Buttons - Philosopher */
+  .nav-text {
+    @apply font-philosopher font-medium tracking-mystical;
+  }
+  
+  .button-text {
+    @apply font-philosopher font-semibold tracking-mystical;
+  }
+  
+  /* Special Effects */
+  .text-shimmer {
+    @apply animate-text-shimmer;
+  }
+  
+  .text-ethereal {
+    @apply text-shadow-subtle-glow;
+  }
+}
+
+/* Custom animations for mystical effects */
+@keyframes text-shimmer {
+  0%, 100% { 
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); 
+  }
+  50% { 
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.6); 
+  }
+}
