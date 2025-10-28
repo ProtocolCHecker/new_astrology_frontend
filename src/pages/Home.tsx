@@ -14,28 +14,28 @@ const Home: React.FC = () => {
       title: 'Birth Chart Analysis',
       description: 'Discover your cosmic blueprint with detailed planetary positions and interpretations.',
       path: '/birth-chart',
-      imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/birth_chart_picture.webp'
+      imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623457/birth_chart_picture_nh8plf.webp'
     },
     {
       icon: Heart,
       title: 'Compatibility Readings',
       description: 'Explore the celestial chemistry between souls and find your cosmic match.',
       path: '/compatibility',
-      imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/compatibility_picture.webp'
+      imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623457/compatibility_picture_vn63ab.webp'
     },
     {
       icon: Calendar,
       title: 'Cosmic Predictions',
       description: 'Receive personalized astrological predictions for your future.',
       path: '/predictions',
-      imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/daily_horoscope_picture.webp'
+      imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623457/daily_horoscope_picture_h2f3tk.webp'
     },
     {
       icon: BookOpen,
       title: 'Cosmic Wisdom',
       description: 'Delve into ancient astrological knowledge and mystical insights.',
       path: '/blog',
-      imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/cosmos_wisdom_picture.webp'
+      imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623456/cosmos_wisdom_picture_qdokoc.webp'
     }
   ];
 
