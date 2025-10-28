@@ -43,7 +43,7 @@ export const zodiacSigns: ZodiacSign[] = [
     planet: 'Moon',
     traits: ['Nurturing', 'Intuitive', 'Emotional', 'Protective'],
     compatibleSigns: ['Taurus', 'Virgo', 'Scorpio', 'Pisces'],
-    imageUrl: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/cancer_picture.webp'
+    imageUrl: 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623469/cancer_picture_pkwjae.webp'
   },
   {
     name: 'Leo',
