@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                 transition={{ duration: 0.8 }}
               >
                 <img
-                  src="https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/astrea_logo.webp"
+                  src="https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623457/astrea_logo_ftfqw1.webp"
                   alt="Astrea Logo"
                   className="w-full h-full object-cover rounded-full"
                   onError={(e) => {
