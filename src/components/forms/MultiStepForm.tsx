@@ -199,6 +199,9 @@ interface MultiStepFormProps {
   isLoading: boolean;
 }
 
+// Cloudinary configuration
+const CLOUDINARY_BASE_URL = 'https://res.cloudinary.com/dmzc2hu4h/image/upload/v1761623469/';
+
 const MultiStepForm: React.FC<MultiStepFormProps> = ({ onComplete, isLoading }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [citySearchQuery, setCitySearchQuery] = useState('');
@@ -352,124 +355,124 @@ const MultiStepForm: React.FC<MultiStepFormProps> = ({ onComplete, isLoading }) 
     // Gender options
     if (field === 'gender') {
       switch (option) {
-        case 'Women': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/woman_astrea.webp';
-        case 'Man': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/man_astrea.webp';
-        case 'I don\'t want to specify': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/dont_reply_astrea.webp';
-        case 'LGTBI': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/lgbt_astrea.webp';
+        case 'Women': return `${CLOUDINARY_BASE_URL}woman_astrea_x2mjcq.webp`;
+        case 'Man': return `${CLOUDINARY_BASE_URL}man_astrea_ciz9pl.webp`;
+        case 'I don\'t want to specify': return `${CLOUDINARY_BASE_URL}dont_reply_astrea_gj17et.webp`;
+        case 'LGTBI': return `${CLOUDINARY_BASE_URL}lgbt_astrea_x4qrf7.webp`;
       }
     }
     // Sentimental situation options
     if (field === 'sentimentalSituation') {
       switch (option) {
-        case 'Married': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/married.webp';
-        case 'Engaged to': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/engaged_to.webp';
-        case 'In a relationship': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/in_a_relationship.webp';
-        case 'Complicated': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/complicated.webp';
-        case 'Single': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/single.webp';
-        case 'Divorced': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/divorced.webp';
+        case 'Married': return `${CLOUDINARY_BASE_URL}married_cjupzu.webp`;
+        case 'Engaged to': return `${CLOUDINARY_BASE_URL}engaged_to_ymj7ab.webp`;
+        case 'In a relationship': return `${CLOUDINARY_BASE_URL}in_a_relationship_luifa2.webp`;
+        case 'Complicated': return `${CLOUDINARY_BASE_URL}complicated_umgrc0.webp`;
+        case 'Single': return `${CLOUDINARY_BASE_URL}single_ubaahk.webp`;
+        case 'Divorced': return `${CLOUDINARY_BASE_URL}divorced_fxdnam.webp`;
       }
     }
     // Birth chart experience options
     if (field === 'hadBirthChart') {
       switch (option) {
-        case 'Yes, they have done it to me': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/yes.webp';
-        case 'No, I haven\'t done it': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/no.webp';
+        case 'Yes, they have done it to me': return `${CLOUDINARY_BASE_URL}yes_rdpmjj.webp`;
+        case 'No, I haven\'t done it': return `${CLOUDINARY_BASE_URL}no_ads2ds.webp`;
       }
     }
     // Recent thoughts options
     if (field === 'recentThoughts') {
       switch (option) {
-        case 'Career': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/careers.webp';
-        case 'Financial issues': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/financial_issues.webp';
-        case 'Love': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/love.webp';
-        case 'Health': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/health.webp';
-        case 'Family life': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/family_life.webp';
-        case 'Friendships': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/friendships.webp';
+        case 'Career': return `${CLOUDINARY_BASE_URL}careers_lfipv2.webp`;
+        case 'Financial issues': return `${CLOUDINARY_BASE_URL}financial_issues_bguz3e.webp`;
+        case 'Love': return `${CLOUDINARY_BASE_URL}love_lrcmcl.webp`;
+        case 'Health': return `${CLOUDINARY_BASE_URL}health_yefclr.webp`;
+        case 'Family life': return `${CLOUDINARY_BASE_URL}family_life_mc2l5v.webp`;
+        case 'Friendships': return `${CLOUDINARY_BASE_URL}friendships_ebxcln.webp`;
       }
     }
     // Element options
     if (field === 'element') {
       switch (option) {
-        case 'Fire': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/fire.webp';
-        case 'Water': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/water.webp';
-        case 'Land': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/earth.webp';
-        case 'Air': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/air.webp';
+        case 'Fire': return `${CLOUDINARY_BASE_URL}fire_iapzry.webp`;
+        case 'Water': return `${CLOUDINARY_BASE_URL}water_p8tazo.webp`;
+        case 'Land': return `${CLOUDINARY_BASE_URL}earth_dfluic.webp`;
+        case 'Air': return `${CLOUDINARY_BASE_URL}air_f6twiy.webp`;
       }
     }
     // Personality traits options
     if (field === 'personality') {
       switch (option) {
-        case 'Emotional': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/emotional.webp';
-        case 'Logical': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/logical.webp';
-        case 'Intelligent': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/intelligent.webp';
-        case 'Enthusiastic': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/enthusiastic.webp';
-        case 'Bossy': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/bossy.webp';
-        case 'Introvert': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/introvert.webp';
-        case 'Reliable': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/reliable.webp';
-        case 'Moody': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/moody.webp';
-        case 'Aesthetic': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/aesthetic.webp';
-        case 'Open-minded': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/open_minded.webp';
-        case 'Children\'s': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/childrens.webp';
-        case 'Positive': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/positive.webp';
-        case 'It\'s intimate': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/intimate.webp';
-        case 'Leal': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/leal.webp';
-        case 'Honest': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/honest.webp';
-        case 'Pessimistic': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/pessimistic.webp';
+        case 'Emotional': return `${CLOUDINARY_BASE_URL}emotional_pfsfup.webp`;
+        case 'Logical': return `${CLOUDINARY_BASE_URL}logical_djrc7p.webp`;
+        case 'Intelligent': return `${CLOUDINARY_BASE_URL}intelligent_wegenu.webp`;
+        case 'Enthusiastic': return `${CLOUDINARY_BASE_URL}enthusiastic_gqrytn.webp`;
+        case 'Bossy': return `${CLOUDINARY_BASE_URL}bossy_wex2iv.webp`;
+        case 'Introvert': return `${CLOUDINARY_BASE_URL}introvert_wmxyfj.webp`;
+        case 'Reliable': return `${CLOUDINARY_BASE_URL}reliable_r6iw4n.webp`;
+        case 'Moody': return `${CLOUDINARY_BASE_URL}moody_x9wjvf.webp`;
+        case 'Aesthetic': return `${CLOUDINARY_BASE_URL}aesthetic_ohywpi.webp`;
+        case 'Open-minded': return `${CLOUDINARY_BASE_URL}open_minded_eii7lw.webp`;
+        case 'Children\'s': return `${CLOUDINARY_BASE_URL}childrens_onhyde.webp`;
+        case 'Positive': return `${CLOUDINARY_BASE_URL}positive_dktgmo.webp`;
+        case 'It\'s intimate': return `${CLOUDINARY_BASE_URL}intimate_wqowyc.webp`;
+        case 'Leal': return `${CLOUDINARY_BASE_URL}leal_qbdemo.webp`;
+        case 'Honest': return `${CLOUDINARY_BASE_URL}honest_pl6ft0.webp`;
+        case 'Pessimistic': return `${CLOUDINARY_BASE_URL}pessimistic_pkva1s.webp`;
       }
     }
     // Compatible signs - use zodiac images
     if (field === 'compatibleSigns') {
       const zodiacImages: { [key: string]: string } = {
-        'Aries': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/aries_picture.webp',
-        'Taurus': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/taurus_picture.webp',
-        'Gemini': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/gemini_picture.webp',
-        'Cancer': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/cancer_picture.webp',
-        'Leo': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/leo_picture.webp',
-        'Virgo': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/virgo_picture.webp',
-        'Libra': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/libra_picture.webp',
-        'Scorpio': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/scorpio_picture.webp',
-        'Sagittarius': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/sagittarius_picture.webp',
-        'Capricorn': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/capricorn_picture.webp',
-        'Aquarius': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/aquarius_picture.webp',
-        'Pisces': 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/pisces_picture.webp'
+        'Aries': `${CLOUDINARY_BASE_URL}aries_picture_e3utfb.webp`,
+        'Taurus': `${CLOUDINARY_BASE_URL}taurus_picture_jv7wdk.webp`,
+        'Gemini': `${CLOUDINARY_BASE_URL}gemini_picture_unyydz.webp`,
+        'Cancer': `${CLOUDINARY_BASE_URL}cancer_picture_pkwjae.webp`,
+        'Leo': `${CLOUDINARY_BASE_URL}leo_picture_xzgdj1.webp`,
+        'Virgo': `${CLOUDINARY_BASE_URL}virgo_picture_ybel0n.webp`,
+        'Libra': `${CLOUDINARY_BASE_URL}libra_picture_fy8fr6.webp`,
+        'Scorpio': `${CLOUDINARY_BASE_URL}scorpio_picture_ab86nz.webp`,
+        'Sagittarius': `${CLOUDINARY_BASE_URL}sagittarius_picture_omnsaa.webp`,
+        'Capricorn': `${CLOUDINARY_BASE_URL}capricorn_picture_ln33ro.webp`,
+        'Aquarius': `${CLOUDINARY_BASE_URL}aquarius_picture_mv7sx6.webp`,
+        'Pisces': `${CLOUDINARY_BASE_URL}pisces_picture_pyqmhs.webp`
       };
       return zodiacImages[option];
     }
     // Misunderstood options
     if (field === 'misunderstood') {
       switch (option) {
-        case 'Very often': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/very_often.webp';
-        case 'Sometimes': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/sometimes.webp';
-        case 'Rarely': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/rarely.webp';
-        case 'Never': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/never.webp';
+        case 'Very often': return `${CLOUDINARY_BASE_URL}very_often_vnxbcx.webp`;
+        case 'Sometimes': return `${CLOUDINARY_BASE_URL}sometimes_qwuzqu.webp`;
+        case 'Rarely': return `${CLOUDINARY_BASE_URL}rarely_uv8izu.webp`;
+        case 'Never': return `${CLOUDINARY_BASE_URL}never_uu1rjj.webp`;
       }
     }
     // Partner gestures options
     if (field === 'partnerGestures') {
       switch (option) {
-        case 'Approval statements': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/approval_sentiments.webp';
-        case 'Material things': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/material_things.webp';
-        case 'Affective behaviors': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/affective_behavior.webp';
-        case 'Quality time': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/quality_time.webp';
-        case 'Physical intimacy': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/physical_intimacy.webp';
+        case 'Approval statements': return `${CLOUDINARY_BASE_URL}approval_sentiments_ez2c2c.webp`;
+        case 'Material things': return `${CLOUDINARY_BASE_URL}material_things_blexne.webp`;
+        case 'Affective behaviors': return `${CLOUDINARY_BASE_URL}affective_behavior_sefxbw.webp`;
+        case 'Quality time': return `${CLOUDINARY_BASE_URL}quality_time_xteff5.webp`;
+        case 'Physical intimacy': return `${CLOUDINARY_BASE_URL}physical_intimacy_msagah.webp`;
       }
     }
     // Favorite activity options
     if (field === 'favoriteActivity') {
       switch (option) {
-        case 'Do sports': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/sportive.webp';
-        case 'Read a book': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/reader.webp';
-        case 'See live performances': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/performer.webp';
-        case 'Watch a movie or series': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/watcher.webp';
+        case 'Do sports': return `${CLOUDINARY_BASE_URL}sportive_eu8isa.webp`;
+        case 'Read a book': return `${CLOUDINARY_BASE_URL}reader_nhokhd.webp`;
+        case 'See live performances': return `${CLOUDINARY_BASE_URL}performer_bwxb2x.webp`;
+        case 'Watch a movie or series': return `${CLOUDINARY_BASE_URL}watcher_lfgruf.webp`;
       }
     }
     // Living place options
     if (field === 'livingPlace') {
       switch (option) {
-        case 'Traveling all the time': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/traveler.webp';
-        case 'Coastal city': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/coastal_city.webp';
-        case 'Metropolis': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/metropolis.webp';
-        case 'Secluded cabin': return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/secluded_cabin.webp';
+        case 'Traveling all the time': return `${CLOUDINARY_BASE_URL}traveler_tawnhh.webp`;
+        case 'Coastal city': return `${CLOUDINARY_BASE_URL}coastal_city_xhrj6z.webp`;
+        case 'Metropolis': return `${CLOUDINARY_BASE_URL}metropolis_v5or9r.webp`;
+        case 'Secluded cabin': return `${CLOUDINARY_BASE_URL}secluded_cabin_huauv3.webp`;
       }
     }
     return null;
@@ -480,15 +483,15 @@ const MultiStepForm: React.FC<MultiStepFormProps> = ({ onComplete, isLoading }) 
     const imageSteps = [4, 9, 11, 14, 18, 19, 22, 24];
     if (imageSteps.includes(currentStep)) {
       switch (currentStep) {
-        case 4: return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/great_transition.webp';
-        case 9: return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/birth_chart_scientific_transition.webp';
-        case 11: return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/promised_aspects.webp';
-        case 14: return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/tenth_house.webp';
-        case 18: return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/relationship_and_marriage.webp';
-        case 19: return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/find_hidden_talent.webp';
-        case 22: return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/seventh_house.webp';
-        case 24: return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/complete_birth_chart.webp';
-        default: return 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/birth_chart_picture.webp';
+        case 4: return `${CLOUDINARY_BASE_URL}great_transition_h1rnwk.webp`;
+        case 9: return `${CLOUDINARY_BASE_URL}birth_chart_scientific_transition_gbbemi.webp`;
+        case 11: return `${CLOUDINARY_BASE_URL}promised_aspects_ahpgrm.webp`;
+        case 14: return `${CLOUDINARY_BASE_URL}tenth_house_xosmgg.webp`;
+        case 18: return `${CLOUDINARY_BASE_URL}relationship_and_marriage_pszxc6.webp`;
+        case 19: return `${CLOUDINARY_BASE_URL}find_hidden_talent_yxyope.webp`;
+        case 22: return `${CLOUDINARY_BASE_URL}seventh_house_n4beng.webp`;
+        case 24: return `${CLOUDINARY_BASE_URL}complete_birth_chart_vdiuxc.webp`;
+        default: return `${CLOUDINARY_BASE_URL}birth_chart_picture_nh8plf.webp`;
       }
     }
     return null;
@@ -535,15 +538,15 @@ const MultiStepForm: React.FC<MultiStepFormProps> = ({ onComplete, isLoading }) 
               {[
                 {
                   title: 'Your birth chart',
-                  image: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/birth_chart_picture.webp'
+                  image: `${CLOUDINARY_BASE_URL}birth_chart_picture_nh8plf.webp`
                 },
                 {
                   title: 'The most important decisions',
-                  image: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/most_important_decision.webp'
+                  image: `${CLOUDINARY_BASE_URL}most_important_decision_sbbsrg.webp`
                 },
                 {
                   title: 'Marriage and relationships',
-                  image: 'https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/marriage_and_relationship.webp'
+                  image: `${CLOUDINARY_BASE_URL}marriage_and_relationship_fr8h0f.webp`
                 }
               ].map((item, index) => (
                 <div
@@ -927,7 +930,7 @@ const MultiStepForm: React.FC<MultiStepFormProps> = ({ onComplete, isLoading }) 
                           className="w-48 h-48 rounded-full border-2 border-gold/50 shadow-lg shadow-gold/25 overflow-hidden"
                         >
                           <img
-                            src="https://raw.githubusercontent.com/ProtocolCHecker/Liquidity_provider_project/main/birth_chart_picture.webp"
+                            src={`${CLOUDINARY_BASE_URL}birth_chart_picture_nh8plf.webp`}
                             alt="Birth Chart"
                             className="w-full h-full object-cover"
                             onError={(e) => {
